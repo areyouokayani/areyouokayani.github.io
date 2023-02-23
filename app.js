@@ -36,5 +36,5 @@ const enhance = (id) => {
 enhance("dancer-link");
 enhance("model-link");
 enhance("web-developer-link");
-enhance("instagram-link");
+enhance("twitter-link");
 

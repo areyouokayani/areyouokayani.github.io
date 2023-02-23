@@ -1,13 +1,12 @@
 :root {  
-  --pink: #cd2e58;
+
   --pinkTransparent: #cd2e58b5;
-  --orange: #f55538;
-  --yellow: #fac01e;
-    --green: #c9f04e;
-    --blue: #40c27c;
-    --purple: #823CC4;
-    --plum: #9E2E93;
-    --roseRed: #BA2061;
+  --orange: #fb9606;
+  --scarlet: #fe320b;
+  --red: #bc1c37;
+  --cerise: #df2a63;
+  --pink: #d4219b;
+  --redTransparent: #bc1c37a2;
   }
 * {
   margin: 0;
@@ -56,7 +55,7 @@ a {
 }
 
 a:hover {
-  color: var(--pink);
+  color: var(--red);
 }
 
 @media (max-width: 500px) {
@@ -77,13 +76,13 @@ a:hover {
     width: 300px;
     height: 500px;
     background-color: #fff6ed1d;
-    box-shadow: 0.5em 0.5em 0.5em -0.2em var(--pinkTransparent);
+    box-shadow: 0.5em 0.5em 0.5em -0.2em var(--redTransparent);
   
   }
 
   #model-stats:hover {
     background-color: #fff6edc0;
-    box-shadow: 0.5em 0.5em 0.5em -0.2em var(--pinkTransparent);
+    box-shadow: 0.5em 0.5em 0.5em -0.2em var(--redTransparent);
   }
 }
 

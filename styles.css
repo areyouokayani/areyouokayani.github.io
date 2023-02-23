@@ -1,12 +1,10 @@
 :root {  
-  --pink: #cd2e58;
-  --orange: #f55538;
-  --yellow: #fac01e;
-    --green: #c9f04e;
-    --blue: #40c27c;
-    --purple: #823CC4;
-    --plum: #9E2E93;
-    --roseRed: #BA2061;
+--orange: #fb9606;
+--scarlet: #fe320b;
+--red: #bc1c37;
+--cerise: #df2a63;
+--pink: #d4219b;
+  
   }
   
   @keyframes float {
@@ -79,9 +77,10 @@
   #dancer-link.fancy:hover > .outer > .inner > .letter {
     background: linear-gradient(
       to right,
-      var(--green),
-      var(--blue),
-      var(--green)
+      var(--cerise),
+      var(--pink),
+      var(--cerise)
+      
       
     );
     background-size: 1000%;
@@ -94,9 +93,10 @@
   #model-link.fancy:hover > .outer > .inner > .letter {
     background: linear-gradient(
       to right,
-      var(--yellow),
-      var(--green),
-      var(--yellow)
+      var(--red),
+      var(--cerise),
+      var(--red)
+     
       
     );
     background-size: 1000%;
@@ -109,9 +109,9 @@
   #web-developer-link.fancy:hover > .outer > .inner > .letter {
     background: linear-gradient(
       to right,
-      var(--orange),
-      var(--yellow),
-      var(--orange)
+      var(--scarlet),
+      var(--red),
+      var(--scarlet)
     );
     background-size: 1000%;
     -webkit-background-clip: text;
@@ -119,12 +119,12 @@
     animation: background-pan 50s linear infinite;
   }
 
-  #instagram-link.fancy:hover > .outer > .inner > .letter {
+  #twitter-link.fancy:hover > .outer > .inner > .letter {
     background: linear-gradient(
       to right,
-      var(--pink),
       var(--orange),
-      var(--pink)
+      var(--scarlet),
+      var(--orange)
     );
     background-size: 1000%;
     -webkit-background-clip: text;
