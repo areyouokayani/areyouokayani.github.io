@@ -1,3 +1,14 @@
+:root {  
+  --pink: #cd2e58;
+  --pinkTransparent: #cd2e58b5;
+  --orange: #f55538;
+  --yellow: #fac01e;
+    --green: #c9f04e;
+    --blue: #40c27c;
+    --purple: #823CC4;
+    --plum: #9E2E93;
+    --roseRed: #BA2061;
+  }
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +26,7 @@
 #image-carousel,
 #model-stats {
   flex: 1;
+  background-color: #fff6ed;
 }
 
 img {
@@ -44,12 +56,13 @@ a {
 }
 
 a:hover {
-  color: #d01f5c;
+  color: var(--pink);
 }
 
 @media (max-width: 500px) {
   * {
     background-color: rgba(10, 0, 0, 0);
+    overflow: hidden;
   }
 
   #model-stats {
@@ -64,22 +77,32 @@ a:hover {
     width: 300px;
     height: 500px;
     background-color: #fff6ed1d;
-    box-shadow: 0.5em 0.5em 0.5em -0.2em #d01f5d91;
+    box-shadow: 0.5em 0.5em 0.5em -0.2em var(--pinkTransparent);
   
   }
 
   #model-stats:hover {
     background-color: #fff6edc0;
-    box-shadow: 0.5em 0.5em 0.5em -0.2em #d01f5d91;
+    box-shadow: 0.5em 0.5em 0.5em -0.2em var(--pinkTransparent);
   }
 }
 
 .carousel-image {
   opacity: 1;
+  z-index: 2;
+  transition: opacity 1s;
+}
+
+.carousel-image-two {
+  opacity:0;
+  z-index: 1;
   transition: opacity 1s;
 }
 
 .hidden{
   opacity: 0;
 
+}
+.visible{
+  opacity:1
 }

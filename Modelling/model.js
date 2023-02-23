@@ -16,12 +16,17 @@ function carouselImages() {
     imgElement.classList.add("hidden");
     setTimeout(() => {
       imgElement.classList.remove("hidden");
+      let nextIndex = index;
+      while (nextIndex === index) {
+        nextIndex =Math.floor(Math.random()*20);
+      }
       index = (index + 1) % images.length;
       imgElement.src = images[index].src;
-    }, 1000);
-  }, 5000);
+    }, 800);
+  }, 6000);
 }
 
-window.addEventListener("load", function () {
+
+window.onload = function() {
   carouselImages();
-});
+}
