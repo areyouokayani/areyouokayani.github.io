@@ -73,3 +73,13 @@ a:hover {
     box-shadow: 0.5em 0.5em 0.5em -0.2em #d01f5d91;
   }
 }
+
+.carousel-image {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.hidden{
+  opacity: 0;
+
+}
